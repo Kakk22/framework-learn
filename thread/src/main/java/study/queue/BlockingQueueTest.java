@@ -1,4 +1,4 @@
-package com.cyf.interview.study.queue;
+package study.queue;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -72,7 +72,7 @@ public class BlockingQueueTest {
     }
 
     /**
-     * @param directory
+     * @param directory /
      * @throws InterruptedException
      */
     private static void enumerate(File directory) throws InterruptedException {

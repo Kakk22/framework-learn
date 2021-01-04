@@ -1,4 +1,4 @@
-package com.cyf.interview.study.thread;
+package study.thread;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
