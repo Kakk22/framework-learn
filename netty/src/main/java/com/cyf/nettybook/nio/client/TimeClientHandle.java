@@ -37,6 +37,8 @@ public class TimeClientHandle implements Runnable {
     @Override
     public void run() {
         try {
+            //如果直接连接成功 则注册到多路复用器上 发送请求消息 读应答
+            //如果没有直接连接成功,则说明服务器没有返回TCP握手应答
             doConnect();
         } catch (IOException e) {
             e.printStackTrace();
@@ -47,7 +49,7 @@ public class TimeClientHandle implements Runnable {
                 selector.select(1000);
                 Set<SelectionKey> selectionKeys = selector.selectedKeys();
                 Iterator<SelectionKey> iterator = selectionKeys.iterator();
-                SelectionKey key = null;
+                SelectionKey key ;
                 while (iterator.hasNext()) {
                     key = iterator.next();
                     iterator.remove();
@@ -82,6 +84,8 @@ public class TimeClientHandle implements Runnable {
             // 判断是否连接成功
             SocketChannel sc = (SocketChannel) key.channel();
             if (key.isConnectable()) {
+                // 如果是连接状态,说明服务端已经返回ACK应答消息
+                // sc.finishConnect()如果为true 则说明连接成功 注册读的操作位 监听网络读操作 然后发请求给服务器
                 if (sc.finishConnect()) {
                     sc.register(selector, SelectionKey.OP_READ);
                     doWrite(sc);
@@ -115,7 +119,6 @@ public class TimeClientHandle implements Runnable {
     }
 
     private void doConnect() throws IOException {
-        // 如果直接连接成功 则注册到多路复用器上 发送请求消息 读应答
         if (socketChannel.connect(new InetSocketAddress(host, port))) {
             socketChannel.register(selector, SelectionKey.OP_READ);
             doWrite(socketChannel);
