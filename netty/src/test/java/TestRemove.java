@@ -16,15 +16,15 @@ public class TestRemove {
         set.add(4);
         set.add(5);
         set.add(6);
-        Iterator<Integer> iterator = set.iterator();
-        while (iterator.hasNext()){
-            System.out.println(iterator.next());
-            iterator.remove();
-        }
-
-//        for (Integer integer : set) {
-//            //会报错
-//            set.remove(integer);
+//        Iterator<Integer> iterator = set.iterator();
+//        while (iterator.hasNext()){
+//            System.out.println(iterator.next());
+//            iterator.remove();
 //        }
+
+        for (Integer integer : set) {
+            //会报错
+            set.remove(integer);
+        }
     }
 }
