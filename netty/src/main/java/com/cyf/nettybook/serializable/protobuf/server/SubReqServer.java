@@ -1,6 +1,5 @@
 package com.cyf.nettybook.serializable.protobuf.server;
 
-import com.cyf.nettybook.netty.codec.delimiterandfixed.server.EchoServer;
 import com.cyf.nettybook.serializable.protobuf.pojo.SubscribeReqProto;
 import com.cyf.nettybook.serializable.protobuf.pojo.SubscribeRespProto;
 import io.netty.bootstrap.ServerBootstrap;

@@ -9,6 +9,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.DelimiterBasedFrameDecoder;
+import io.netty.handler.codec.FixedLengthFrameDecoder;
 import io.netty.handler.codec.string.StringDecoder;
 
 /**
@@ -33,6 +34,8 @@ public class EchoClient {
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ByteBuf delimiter = Unpooled.copiedBuffer("$_".getBytes());
                             ch.pipeline().addLast(new DelimiterBasedFrameDecoder(1024, delimiter));
+                            //定长解码器
+                            //ch.pipeline().addLast(new FixedLengthFrameDecoder(1024));
                             ch.pipeline().addLast(new StringDecoder());
                             ch.pipeline().addLast(new EchoClientHandler());
                         }
