@@ -24,6 +24,7 @@
         <module>spring</module>
         <module>thread</module>
         <module>netty</module>
+        <module>jvm</module>
     </modules>
 
 
