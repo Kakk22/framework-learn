@@ -54,21 +54,15 @@ public class HttpFileServer {
     }
 
     private class HttpFileServerHandler extends SimpleChannelInboundHandler<FullHttpRequest>{
-        private String url;
+        private final String url;
 
         public HttpFileServerHandler(String url) {
             this.url = url;
         }
 
-
-
         @Override
         protected void channelRead0(ChannelHandlerContext ctx, FullHttpRequest msg) throws Exception {
 
         }
-
-
-
-
     }
 }
