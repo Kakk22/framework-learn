@@ -1,4 +1,4 @@
-package com.cyf.nettybook.protocol;
+package com.cyf.nettybook.protocol.websocket;
 
 import cn.hutool.http.HttpStatus;
 import io.netty.bootstrap.ServerBootstrap;
