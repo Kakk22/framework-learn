@@ -1,4 +1,4 @@
-package com.cyf.nettybook.protocol;
+package com.cyf.nettybook.protocol.handler;
 
 import com.cyf.nettybook.protocol.message.Header;
 import com.cyf.nettybook.protocol.message.MessageType;
@@ -7,14 +7,16 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
 /**
+ * 握手请求处理器
+ *
  * @author 陈一锋
  * @date 2021/1/15 21:02
  **/
-public class LoginAuthHandler extends ChannelInboundHandlerAdapter {
+public class LoginAuthReqHandler extends ChannelInboundHandlerAdapter {
 
 
     @Override
-    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+    public void channelActive(ChannelHandlerContext ctx) {
         ctx.writeAndFlush(buildReq());
     }
 
@@ -23,7 +25,7 @@ public class LoginAuthHandler extends ChannelInboundHandlerAdapter {
      * 判断是否认真成功
      */
     @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+    public void channelRead(ChannelHandlerContext ctx, Object msg) {
         NettyMessage message = (NettyMessage) msg;
         if (message.getHeader() != null
                 && message.getHeader().getType() == MessageType.LOGIN_RESP.getType()) {
@@ -41,7 +43,7 @@ public class LoginAuthHandler extends ChannelInboundHandlerAdapter {
     }
 
     @Override
-    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {
         ctx.fireExceptionCaught(cause);
     }
 
