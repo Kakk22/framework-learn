@@ -25,6 +25,7 @@
         <module>thread</module>
         <module>netty</module>
         <module>jvm</module>
+        <module>interview</module>
     </modules>
 
 
