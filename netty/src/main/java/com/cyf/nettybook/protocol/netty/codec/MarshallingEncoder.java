@@ -1,4 +1,4 @@
-package com.cyf.nettybook.protocol.codec;
+package com.cyf.nettybook.protocol.netty.codec;
 
 import io.netty.buffer.ByteBuf;
 import org.jboss.marshalling.Marshaller;

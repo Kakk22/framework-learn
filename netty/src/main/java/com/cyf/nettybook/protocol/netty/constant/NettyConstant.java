@@ -1,4 +1,4 @@
-package com.cyf.nettybook.protocol.constant;
+package com.cyf.nettybook.protocol.netty.constant;
 
 /**
  * @author 陈一锋

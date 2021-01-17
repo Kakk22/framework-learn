@@ -1,4 +1,4 @@
-package com.cyf.nettybook.protocol.message;
+package com.cyf.nettybook.protocol.netty.message;
 
 import lombok.Getter;
 

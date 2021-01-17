@@ -1,15 +1,12 @@
-package com.cyf.nettybook.protocol.codec;
+package com.cyf.nettybook.protocol.netty.codec;
 
-import com.cyf.nettybook.protocol.message.Header;
-import com.cyf.nettybook.protocol.message.NettyMessage;
+import com.cyf.nettybook.protocol.netty.message.Header;
+import com.cyf.nettybook.protocol.netty.message.NettyMessage;
 import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
-import io.netty.handler.codec.MessageToMessageEncoder;
 
 import java.io.IOException;
-import java.util.List;
 import java.util.Map;
 
 /**

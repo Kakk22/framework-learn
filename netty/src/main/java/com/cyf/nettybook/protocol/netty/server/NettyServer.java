@@ -1,10 +1,10 @@
-package com.cyf.nettybook.protocol.server;
+package com.cyf.nettybook.protocol.netty.server;
 
-import com.cyf.nettybook.protocol.codec.NettyMessageDecoder;
-import com.cyf.nettybook.protocol.codec.NettyMessageEncoder;
-import com.cyf.nettybook.protocol.constant.NettyConstant;
-import com.cyf.nettybook.protocol.handler.HeartBeatResHandler;
-import com.cyf.nettybook.protocol.handler.LoginAuthResHandler;
+import com.cyf.nettybook.protocol.netty.codec.NettyMessageDecoder;
+import com.cyf.nettybook.protocol.netty.codec.NettyMessageEncoder;
+import com.cyf.nettybook.protocol.netty.constant.NettyConstant;
+import com.cyf.nettybook.protocol.netty.handler.HeartBeatResHandler;
+import com.cyf.nettybook.protocol.netty.handler.LoginAuthResHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;

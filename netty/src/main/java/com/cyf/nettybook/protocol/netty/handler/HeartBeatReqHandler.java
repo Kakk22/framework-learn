@@ -1,8 +1,8 @@
-package com.cyf.nettybook.protocol.handler;
+package com.cyf.nettybook.protocol.netty.handler;
 
-import com.cyf.nettybook.protocol.message.Header;
-import com.cyf.nettybook.protocol.message.MessageType;
-import com.cyf.nettybook.protocol.message.NettyMessage;
+import com.cyf.nettybook.protocol.netty.message.Header;
+import com.cyf.nettybook.protocol.netty.message.MessageType;
+import com.cyf.nettybook.protocol.netty.message.NettyMessage;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.concurrent.ScheduledFuture;

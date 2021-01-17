@@ -1,6 +1,5 @@
-package com.cyf.nettybook.protocol.codec;
+package com.cyf.nettybook.protocol.netty.codec;
 
-import io.netty.handler.codec.marshalling.*;
 import org.jboss.marshalling.*;
 
 import java.io.IOException;
