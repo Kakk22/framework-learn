@@ -17,7 +17,9 @@ public class LoginAuthReqHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) {
-        ctx.writeAndFlush(buildReq());
+        NettyMessage message = buildReq();
+        System.out.println("建立连接,发送握手请求数据:" + message.toString());
+        ctx.writeAndFlush(message);
     }
 
     /**

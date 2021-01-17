@@ -41,6 +41,7 @@ public class LoginAuthResHandler extends ChannelInboundHandlerAdapter {
                 String nodeIndex = ctx.channel().remoteAddress().toString();
                 if (nodeCache.containsKey(nodeIndex)) {
                     //重复登录
+                    System.out.println("This address has login:" + nodeIndex);
                     ctx.writeAndFlush(buildRes((byte) -1));
                 } else {
                     //验证是否在白名单
@@ -48,6 +49,7 @@ public class LoginAuthResHandler extends ChannelInboundHandlerAdapter {
                     String ip = inetSocketAddress.getAddress().getHostAddress();
                     if (WHITE_LIST.contains(ip)) {
                         // 回复成功消息
+                        System.out.println("the address " + ip + " login successful");
                         ctx.writeAndFlush(buildRes((byte) 0));
                         nodeCache.put(nodeIndex, true);
                     } else {

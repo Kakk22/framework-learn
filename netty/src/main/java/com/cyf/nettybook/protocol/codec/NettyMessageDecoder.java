@@ -33,30 +33,29 @@ public class NettyMessageDecoder extends LengthFieldBasedFrameDecoder {
             return null;
         }
 
-
         Header header = new Header();
-        header.setCrcCode(in.readInt());
-        header.setLength(in.readInt());
-        header.setSessionId(in.readLong());
-        header.setType(in.readByte());
-        header.setPriority(in.readByte());
+        header.setCrcCode(frame.readInt());
+        header.setLength(frame.readInt());
+        header.setSessionId(frame.readLong());
+        header.setType(frame.readByte());
+        header.setPriority(frame.readByte());
 
-        int size = in.readInt();
+        int size = frame.readInt();
         if (size > 0) {
             Map<String, Object> att = new HashMap<>(size);
             for (int i = 0; i < size; i++) {
-                int keyLength = in.readInt();
+                int keyLength = frame.readInt();
                 byte[] keyBuf = new byte[keyLength];
-                in.readBytes(keyBuf);
+                frame.readBytes(keyBuf);
                 String key = new String(keyBuf, StandardCharsets.UTF_8);
-                att.put(key, marshallingDecoder.decode(in));
+                att.put(key, marshallingDecoder.decode(frame));
             }
             header.setAttachment(att);
         }
         NettyMessage message = new NettyMessage();
         message.setHeader(header);
-        if (in.readableBytes() > 4) {
-            message.setBody(marshallingDecoder.decode(in));
+        if (frame.readableBytes() > 4) {
+            message.setBody(marshallingDecoder.decode(frame));
         }
         return message;
     }
