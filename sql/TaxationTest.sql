@@ -49,13 +49,11 @@ select distinct s.off from staff s ;
 
 -- 2、查询业务办理时间低于该业务平均办理时间的办税记录
 
-select * from processingTime p where  p."time" > (select avg('time') from processingTime p1 where p1.ta_id = p.ta_id);
+select p.* from processingTime p where  p.time < (select avg(p1.time) from processingTime p1 where p1.ta_id = p.ta_id);
 
 -- 3、查询每位办税人的信息及到目前为止的总办理业务时长
 
-select s.id,s.name,s.off,SUM() from staff s where s.id in (select s_id from ;)
-
-select SUM(p."time") as 'total time' from processingTime p where group by p.s_id ;
+select s.id,s.name,s.off,SUM(p.time) as 'total time' from staff s,processingTime p WHERE s.id = p.s_id GROUP BY p.s_id ;
 
 -- 4、查询到办税厅办税超过12次的纳税人信息
 
