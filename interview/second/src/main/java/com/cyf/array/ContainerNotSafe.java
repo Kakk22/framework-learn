@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author 陈一锋
@@ -12,6 +13,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  **/
 public class ContainerNotSafe {
     public static void main(String[] args) {
+        ReentrantLock lock = new ReentrantLock();
         // ArrayList 线程不安全 会出现java.util.ConcurrentModificationException
         List<String> list = new ArrayList<>();
         //线程安全

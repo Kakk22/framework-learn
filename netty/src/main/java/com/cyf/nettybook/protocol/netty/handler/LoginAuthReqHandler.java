@@ -24,7 +24,7 @@ public class LoginAuthReqHandler extends ChannelInboundHandlerAdapter {
 
     /**
      * 如果是握手应答消息
-     * 判断是否认真成功
+     * 判断是否认证成功
      */
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
