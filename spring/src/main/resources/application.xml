@@ -5,5 +5,6 @@
 
 
     <bean id="messageService" class="com.cyf.service.impl.MessagesImpl"></bean>
+    <bean id="TestListener" class="com.cyf.listener.TestListener"></bean>
 
 </beans>
