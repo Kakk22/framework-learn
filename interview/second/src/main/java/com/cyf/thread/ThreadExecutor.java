@@ -10,11 +10,11 @@ import java.util.concurrent.*;
  **/
 public class ThreadExecutor {
 
-    private static BlockingQueue<Runnable> linkedBlockingDeque = new LinkedBlockingDeque<>(
+    private static final BlockingQueue<Runnable> LINKED_BLOCKING_DEQUE = new LinkedBlockingDeque<>(
             1024);
 
-    private static ExecutorService executorService = new ThreadPoolExecutor(1, 10, 30,
-            TimeUnit.SECONDS, linkedBlockingDeque,
+    private static final ExecutorService executorService = new ThreadPoolExecutor(1, 10, 30,
+            TimeUnit.SECONDS, LINKED_BLOCKING_DEQUE,
             new ThreadPoolExecutor.AbortPolicy());
 
     public static void execute(Runnable r) {
