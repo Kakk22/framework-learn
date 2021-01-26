@@ -1,4 +1,4 @@
-package com.cyf.practice;
+package com.cyf.juc.practice;
 
 /**
  * @author 陈一锋

@@ -1,4 +1,4 @@
-package com.cyf.cas;
+package com.cyf.juc.cas;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;

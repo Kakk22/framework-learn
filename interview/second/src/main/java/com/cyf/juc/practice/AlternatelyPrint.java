@@ -1,4 +1,4 @@
-package com.cyf.practice;
+package com.cyf.juc.practice;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

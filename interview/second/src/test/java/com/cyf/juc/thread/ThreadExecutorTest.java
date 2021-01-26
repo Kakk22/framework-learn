@@ -1,4 +1,4 @@
-package com.cyf.thread;
+package com.cyf.juc.thread;
 
 /**
  * @author 陈一锋

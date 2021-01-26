@@ -1,4 +1,4 @@
-package com.cyf.lock;
+package com.cyf.juc.lock;
 
 import java.util.concurrent.locks.ReentrantLock;
 

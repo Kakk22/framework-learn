@@ -1,4 +1,4 @@
-package com.cyf.blockingqueue;
+package com.cyf.juc.blockingqueue;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;

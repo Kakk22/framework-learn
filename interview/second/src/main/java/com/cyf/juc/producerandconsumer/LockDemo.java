@@ -1,4 +1,4 @@
-package com.cyf.producerandconsumer;
+package com.cyf.juc.producerandconsumer;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
