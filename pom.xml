@@ -27,6 +27,7 @@
         <module>jvm</module>
         <module>interview</module>
         <module>sql</module>
+        <module>springmvc</module>
     </modules>
 
 

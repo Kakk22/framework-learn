@@ -1,3 +1,5 @@
+-- noinspection SqlDialectInspectionForFile
+
 -- 记录遇到的4条sql限时题目
 
 -- 题目

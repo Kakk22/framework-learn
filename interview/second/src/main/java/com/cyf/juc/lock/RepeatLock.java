@@ -1,4 +1,4 @@
-package com.cyf.lock;
+package com.cyf.juc.lock;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -30,7 +30,7 @@ public class RepeatLock {
  */
 class Resources implements  Runnable{
 
-    private Lock lock = new ReentrantLock();
+    private final Lock lock = new ReentrantLock();
 
     public synchronized void sendMsg(){
         System.out.println(Thread.currentThread().getName()+"\t send msg");
