@@ -1,15 +1,13 @@
-package com.cyf;
+package org.simple;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/**
- * @author 陈一锋
- * @date 2021/1/25 16:34
- **/
 @SpringBootApplication
-public class SpringmvcApplication {
+public class SpringBootStarterThreadpoolApplication {
+
     public static void main(String[] args) {
-        SpringApplication.run(SpringmvcApplication.class, args);
+        SpringApplication.run(SpringBootStarterThreadpoolApplication.class, args);
     }
+
 }
