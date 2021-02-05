@@ -15,6 +15,10 @@ import java.util.concurrent.TimeUnit;
 @Configuration
 public class ThreadPoolAutoConfig {
 
+    /**
+     *
+     * 注解ConditionalOnClass 当条件成立时，springboot才会进行自动装配
+     */
     @Bean
     @ConditionalOnClass(ThreadPoolExecutor.class)
     public ThreadPoolExecutor myThreadPool() {
