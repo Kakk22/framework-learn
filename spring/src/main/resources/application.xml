@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.springframework.org/schema/beans"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire="byName">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-autowire="byName">
 
 
     <bean id="messageService" class="com.cyf.service.impl.MessagesImpl"></bean>
     <bean id="TestListener" class="com.cyf.listener.TestListener"></bean>
 
+    <bean id="a" class="com.cyf.domain.A">
+        <property name="b" ref="b"/>
+    </bean>
+
+    <bean id="b" class="com.cyf.domain.B">
+        <property name="a" ref="a"/>
+    </bean>
 </beans>
