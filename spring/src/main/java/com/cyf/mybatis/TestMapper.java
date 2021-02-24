@@ -17,27 +17,27 @@ public class TestMapper {
 
 
     @Test
-    public void testAdd(){
+    public void testAdd() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
-        try{
+        try {
             UserMapper mapper = sqlSession.getMapper(UserMapper.class);
             User tom = new User("tom", 5);
             mapper.insertUser(tom);
             sqlSession.commit();
-        }finally {
+        } finally {
             sqlSession.close();
         }
     }
 
     @Test
-    public void testGet(){
+    public void testGet() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
-        try{
+        try {
             UserMapper mapper = sqlSession.getMapper(UserMapper.class);
             User user = mapper.getUser(2);
             System.out.println(user);
             sqlSession.commit();
-        }finally {
+        } finally {
             sqlSession.close();
         }
     }
