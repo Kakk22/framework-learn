@@ -19,6 +19,9 @@ public class App {
         MessageService messageService = context.getBean(MessageService.class);
         System.out.println(messageService.getMessages());
 
+
+
+
         ClassPathResource resource = new ClassPathResource("application.xml");
         try (InputStream in = resource.getInputStream(); BufferedReader reader = new BufferedReader(new InputStreamReader(in))) {
             StringBuilder sb = new StringBuilder();

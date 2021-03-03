@@ -12,13 +12,14 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.protobuf.ProtobufVarint32FrameDecoder;
 import io.netty.handler.codec.protobuf.ProtobufVarint32LengthFieldPrepender;
+import io.netty.handler.logging.LogLevel;
+import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.timeout.IdleStateHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
-import java.util.concurrent.TimeUnit;
 
 /**
  * im服务端
@@ -30,7 +31,7 @@ import java.util.concurrent.TimeUnit;
 
 @Component
 @Slf4j
-public class IMServer {
+public class ImServer {
 
     private final NioEventLoopGroup bossGroup = new NioEventLoopGroup(1);
     private final NioEventLoopGroup workGroup = new NioEventLoopGroup();
@@ -40,11 +41,13 @@ public class IMServer {
 
     @PostConstruct
     public void init() {
+
         ServerBootstrap b = new ServerBootstrap();
         b.group(bossGroup, workGroup)
                 .channel(NioServerSocketChannel.class)
-                .option(ChannelOption.SO_BACKLOG, 1024)
-                .option(ChannelOption.TCP_NODELAY, true)
+                .option(ChannelOption.SO_BACKLOG, 128)
+                .childOption(ChannelOption.TCP_NODELAY,true)
+                .handler(new LoggingHandler(LogLevel.INFO))
                 .childHandler(new ChannelInitializer<SocketChannel>() {
                     @Override
                     protected void initChannel(SocketChannel ch) {
@@ -52,12 +55,14 @@ public class IMServer {
                         p.addLast(new ProtobufVarint32FrameDecoder());
                         p.addLast(new ProtobufVarint32LengthFieldPrepender());
                         // 超过30秒未发送消息则发送心跳包
-                        p.addLast(new IdleStateHandler(60,30,0));
-
+                        p.addLast(new IdleStateHandler(60, 30, 0));
+                        p.addLast(new IMServerHandler());
                     }
                 });
+
         try {
             ChannelFuture f = b.bind(properties.getPort()).sync();
+
             //添加监听器
             f.addListener(future -> {
                 if (future.isSuccess()) {
@@ -67,6 +72,7 @@ public class IMServer {
                     throw new RuntimeException("Netty server start fail !", future.cause());
                 }
             });
+
             //等待客户端链路关闭
             f.channel().closeFuture().sync();
         } catch (InterruptedException e) {

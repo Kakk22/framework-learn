@@ -12,7 +12,7 @@ public class Client {
         // 1. 初始化容器
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:application.xml");
         // 2. 创建自定义事件
-        TestEvent testEvent = new TestEvent("myEvent");
+        TestEvent testEvent = new TestEvent("myEvent","messages");
         //发布事件
         context.publishEvent(testEvent);
     }
