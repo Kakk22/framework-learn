@@ -20,5 +20,6 @@ public class TestListener implements ApplicationListener<TestEvent> {
         // 接收到事件
         System.out.println("接收到事件通知:"+event.getClass().getName());
         System.out.println(event.getSource());
+        System.out.println(event.getMsg());
     }
 }
