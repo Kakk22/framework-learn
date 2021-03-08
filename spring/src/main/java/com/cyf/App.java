@@ -1,6 +1,7 @@
 package com.cyf;
 
 import com.cyf.service.MessageService;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 
@@ -15,8 +16,8 @@ import java.io.InputStreamReader;
 public class App {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:application.xml");
-        System.out.println("context 启动成功");
-        MessageService messageService = context.getBean(MessageService.class);
+       // XmlBeanFactory context = new XmlBeanFactory(new ClassPathResource("application.xml"));
+        System.out.println("context 启动成功");        MessageService messageService = context.getBean(MessageService.class);
         System.out.println(messageService.getMessages());
 
         ClassPathResource resource = new ClassPathResource("application.xml");
