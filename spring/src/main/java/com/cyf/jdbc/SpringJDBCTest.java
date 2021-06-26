@@ -8,7 +8,7 @@ import java.util.List;
  * @author 陈一锋
  * @date 2021/2/20 21:00
  **/
-public class SpringJDBCTest {
+public class     SpringJDBCTest {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("application-jdbc.xml");

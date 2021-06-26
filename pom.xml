@@ -27,6 +27,7 @@
         <module>jvm</module>
         <module>interview</module>
         <module>springboot</module>
+        <module>shardingsphere-jdbc</module>
     </modules>
 
 
