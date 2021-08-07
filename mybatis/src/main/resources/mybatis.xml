@@ -3,9 +3,13 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-    <typeAliases>
-        <typeAlias alias="User" type="com.cyf.mybatis.User"></typeAlias>
-    </typeAliases>
+
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="useGeneratedKeys" value="true"/>
+        <setting name="defaultExecutorType" value="REUSE"/>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
 
     <!--整合spring后移除-->
     <environments default="development">
@@ -14,13 +18,15 @@
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
                 <property name="url"
-                          value="jdbc:mysql://localhost:3306/jdbc?characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC&amp;rewriteBatchedStatements=true"></property>
-                <property name="username" value="root"></property>
-                <property name="password" value="root"></property>
+                          value="jdbc:mysql://localhost:3306/mybatis?characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC&amp;rewriteBatchedStatements=true"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
             </dataSource>
         </environment>
     </environments>
+
     <mappers>
-        <mapper resource="UserMapper.xml"/>
+        <package name="com.cyf.mapper"/>
     </mappers>
+
 </configuration>
