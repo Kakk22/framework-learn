@@ -1,10 +1,12 @@
 package com.cyf.model;
 
+import java.io.Serializable;
+
 /**
  * @author 陈一锋
  * @date 2021/8/7 1:03 上午
  */
-public class User {
+public class User implements Serializable {
     private Integer id;
     private String name;
 

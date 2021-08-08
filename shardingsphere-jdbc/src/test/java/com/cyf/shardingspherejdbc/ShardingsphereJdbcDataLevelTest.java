@@ -2,9 +2,7 @@ package com.cyf.shardingspherejdbc;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.cyf.shardingspherejdbc.entity.Course;
-import com.cyf.shardingspherejdbc.entity.User;
 import com.cyf.shardingspherejdbc.mapper.CourseMapper;
-import com.cyf.shardingspherejdbc.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,28 +53,4 @@ public class ShardingsphereJdbcDataLevelTest {
         Course course = courseMapper.selectOne(wrapper);
         System.out.println(course);
     }
-
-    //-----------读写分离
-    @Autowired
-    private UserMapper userMapper;
-
-    @Test
-    void testUser() {
-        for (int i = 0; i < 10; i++) {
-            User user = new User();
-            user.setId(i+100);
-            user.setName("user"+i);
-            userMapper.insert(user);
-        }
-    }
-
-
-    @Test
-    void findUserOne() {
-        QueryWrapper<User> wrapper = new QueryWrapper<>();
-        wrapper.eq("id", 100L);
-        User user = userMapper.selectOne(wrapper);
-        System.out.println(user);
-    }
-
 }
