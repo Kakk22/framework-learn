@@ -26,7 +26,8 @@
     </environments>
 
     <mappers>
-        <package name="com.cyf.mapper"/>
+        <mapper resource="com.cyf.mapper/UserMapper.xml"/>
+<!--        <package name="com.cyf.mapper"/>-->
     </mappers>
 
 </configuration>

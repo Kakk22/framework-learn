@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cyf.mapper.UserMapper">
+
+    <resultMap id="userMap" type="com.cyf.vo.UserVo">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <collection columnPrefix="o_" property="orderList" resultMap="orderMap" />
+    </resultMap>
+
+    <resultMap id="orderMap" type="com.cyf.model.Order">
+        <id column="order_id" property="orderId"/>
+        <result column="user_id" property="userId"/>
+        <result column="order_code" property="orderCode"/>
+    </resultMap>
+
+    <select id="selectUserAndOrder" resultMap="userMap">
+        select u.*, o.order_id as o_order_id, o.user_id as o_user_id, o.order_code as o_order_code
+        from `user` u
+        join `order` o
+        on u.id = o.user_id
+    </select>
+</mapper>

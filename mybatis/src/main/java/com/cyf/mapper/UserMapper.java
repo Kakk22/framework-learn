@@ -1,9 +1,11 @@
 package com.cyf.mapper;
 
 import com.cyf.model.User;
+import com.cyf.vo.UserVo;
 import org.apache.ibatis.annotations.CacheNamespace;
 import org.apache.ibatis.annotations.Select;
 
+import java.util.List;
 
 
 /**
@@ -18,4 +20,9 @@ public interface UserMapper {
 
     @Select("select * from user where id = #{id}")
     User getOne1(Integer id);
+
+    @Select("select * from user where id = #{0} and name = #{1}")
+    User selectByName(Integer id,String name);
+
+    List<UserVo> selectUserAndOrder();
 }

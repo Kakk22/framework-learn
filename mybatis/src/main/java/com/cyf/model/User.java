@@ -15,6 +15,9 @@ public class User implements Serializable {
         this.name = name;
     }
 
+    public User() {
+    }
+
     public int getId() {
         return id;
     }
