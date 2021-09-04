@@ -21,4 +21,17 @@
         join `order` o
         on u.id = o.user_id
     </select>
+
+
+    <select id="selectById" resultMap="userMap">
+        select u.*, o.order_id as o_order_id, o.user_id as o_user_id, o.order_code as o_order_code
+        from `user` u
+        join `order` o
+        on u.id = o.user_id
+        where  u.id in (
+        <foreach collection="list" item="item" separator=",">
+            #{item}
+        </foreach>
+            )
+    </select>
 </mapper>

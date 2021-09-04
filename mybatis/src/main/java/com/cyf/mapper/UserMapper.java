@@ -1,6 +1,7 @@
 package com.cyf.mapper;
 
 import com.cyf.model.User;
+import com.cyf.plugin.Page;
 import com.cyf.vo.UserVo;
 import org.apache.ibatis.annotations.CacheNamespace;
 import org.apache.ibatis.annotations.Select;
@@ -25,4 +26,6 @@ public interface UserMapper {
     User selectByName(Integer id,String name);
 
     List<UserVo> selectUserAndOrder();
+
+    List<UserVo> selectById(List<Integer> list);
 }
