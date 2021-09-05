@@ -3,15 +3,12 @@ package com.cyf.plugin;
 import org.apache.ibatis.executor.statement.StatementHandler;
 import org.apache.ibatis.mapping.BoundSql;
 import org.apache.ibatis.plugin.*;
-import org.apache.ibatis.reflection.MetaObject;
 import org.apache.ibatis.reflection.SystemMetaObject;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Map;
 import java.util.Properties;
 
 /**
@@ -27,7 +24,6 @@ import java.util.Properties;
 )})
 public class PageInterceptor implements Interceptor {
 
-    @SuppressWarnings("unchecked")
     @Override
     public Object intercept(Invocation invocation) throws Throwable {
         //1.获取分页参数
