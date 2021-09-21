@@ -1,5 +1,6 @@
 package com.cyf.mybatis;
 
+import com.cyf.mybatis.mapper.UserMapper;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.Test;

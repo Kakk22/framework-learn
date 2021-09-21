@@ -1,4 +1,6 @@
-package com.cyf.mybatis;
+package com.cyf.mybatis.mapper;
+
+import com.cyf.mybatis.User;
 
 /**
  * @author 陈一锋
