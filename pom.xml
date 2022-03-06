@@ -28,6 +28,7 @@
         <module>interview</module>
         <module>springboot</module>
         <module>shardingsphere-jdbc</module>
+        <module>base</module>
     </modules>
 
 
