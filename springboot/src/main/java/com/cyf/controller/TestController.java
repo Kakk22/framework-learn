@@ -1,5 +1,8 @@
 package com.cyf.controller;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,7 +19,11 @@ import java.util.Map;
 public class TestController {
 
     @RequestMapping("/t1")
-    public String t1(String params) {
+    public void t1(@RequestParam("s") String s){
+                 System.out.println(s);
+    }
+    @RequestMapping("/t12")
+    public String t12(String params) {
         return "hello";
     }
 
