@@ -29,6 +29,9 @@ public class Test1Controller {
         if ("1".equalsIgnoreCase(p)){
             throw new BizException(ExceptionCodeEnum.ERROR);
         }
+        if ("2".equalsIgnoreCase(p)){
+            int i = 1/0;
+        }
         return new User(1,2);
     }
 }

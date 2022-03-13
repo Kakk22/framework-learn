@@ -31,6 +31,7 @@ public class Result<T> implements Serializable {
         return new Result<>(ExceptionCodeEnum.ERROR.getCode(), error.getDesc());
     }
 
+
     public Integer getCode() {
         return code;
     }

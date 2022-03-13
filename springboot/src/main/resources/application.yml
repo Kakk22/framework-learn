@@ -1,2 +1,12 @@
 server:
   port: 8090
+
+#redis
+redis:
+  host: localhost
+  password: #默认为空
+  timeout: PT30M #30分钟
+#spring-session
+session:
+  store-type: redis
+  timeout: PT30
