@@ -8,7 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/framework-learn.iml" filepath="$PROJECT_DIR$/framework-learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/interview/interview.iml" filepath="$PROJECT_DIR$/interview/interview.iml" />
       <module fileurl="file://$PROJECT_DIR$/jvm/jvm.iml" filepath="$PROJECT_DIR$/jvm/jvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty/netty.iml" filepath="$PROJECT_DIR$/netty/netty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/interview/second/second.iml" filepath="$PROJECT_DIR$/interview/second/second.iml" />
       <module fileurl="file://$PROJECT_DIR$/shardingsphere-jdbc/shardingsphere-jdbc.iml" filepath="$PROJECT_DIR$/shardingsphere-jdbc/shardingsphere-jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring.iml" filepath="$PROJECT_DIR$/spring/spring.iml" />

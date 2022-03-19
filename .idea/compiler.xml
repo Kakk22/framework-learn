@@ -7,17 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring" />
         <module name="jvm" />
+        <module name="mybatis" />
+        <module name="thread" />
+        <module name="three" />
+        <module name="redis" />
+        <module name="second" />
+        <module name="spring" />
         <module name="spring-boot-starter-threadpool" />
         <module name="shardingsphere-jdbc" />
-        <module name="thread" />
         <module name="boot-demo" />
-        <module name="three" />
         <module name="first" />
-        <module name="netty" />
-        <module name="second" />
         <module name="base" />
+        <module name="netty" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,7 +29,9 @@
       <module name="framework-learn" target="8" />
       <module name="interview" target="8" />
       <module name="jvm" target="8" />
+      <module name="mybatis" target="8" />
       <module name="netty" target="8" />
+      <module name="redis" target="8" />
       <module name="second" target="8" />
       <module name="shardingsphere-jdbc" target="1.8" />
       <module name="spring" target="8" />
@@ -40,6 +44,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="boot-demo" options="-parameters" />
+      <module name="redis" options="-parameters" />
       <module name="shardingsphere-jdbc" options="-parameters" />
       <module name="spring-boot-starter-threadpool" options="-parameters" />
     </option>

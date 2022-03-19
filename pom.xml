@@ -30,6 +30,7 @@
         <module>shardingsphere-jdbc</module>
         <module>mybatis</module>
         <module>base</module>
+        <module>redis</module>
     </modules>
 
 

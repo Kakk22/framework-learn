@@ -1,0 +1,8 @@
+server:
+  port: 8091
+
+#redis
+redis:
+  host: localhost
+  password: #默认为空
+  timeout: PT30M #30分钟
