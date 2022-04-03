@@ -24,6 +24,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="base" target="8" />
+      <module name="base2" target="8" />
       <module name="boot-demo" target="1.8" />
       <module name="first" target="8" />
       <module name="framework-learn" target="8" />

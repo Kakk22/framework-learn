@@ -17,7 +17,8 @@ public class App {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:application.xml");
        // XmlBeanFactory context = new XmlBeanFactory(new ClassPathResource("application.xml"));
-        System.out.println("context 启动成功");        MessageService messageService = context.getBean(MessageService.class);
+        System.out.println("context 启动成功");
+        MessageService messageService = context.getBean(MessageService.class);
         System.out.println(messageService.getMessages());
 
 

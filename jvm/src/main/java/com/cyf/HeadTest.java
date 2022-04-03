@@ -10,9 +10,9 @@ import java.util.List;
 public class HeadTest {
 
     public static void main(String[] args) throws InterruptedException {
-        List<HeadTest> list = new ArrayList<>();
-        while (true){
-            list.add(new HeadTest());
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < 100000; i++) {
+            list.add(i);
         }
     }
 }
