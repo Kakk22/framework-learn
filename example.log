@@ -1,0 +1,11 @@
+DEBUG 生产者0 c.MessageQueue - 添加数据成功,开始唤醒线程消费
+DEBUG 生产者2 c.MessageQueue - 添加数据成功,开始唤醒线程消费
+DEBUG 生产者1 c.MessageQueue - 数据到达限制,开始等待消费
+DEBUG 生产者3 c.MessageQueue - 数据到达限制,开始等待消费
+DEBUG 消费者 c.MessageQueue - 获取数据成功,开始唤醒线程生产
+DEBUG 生产者3 c.MessageQueue - 添加数据成功,开始唤醒线程消费
+DEBUG 消费者 c.MessageQueue - 获取数据成功,开始唤醒线程生产
+DEBUG 生产者1 c.MessageQueue - 添加数据成功,开始唤醒线程消费
+DEBUG 消费者 c.MessageQueue - 获取数据成功,开始唤醒线程生产
+DEBUG 消费者 c.MessageQueue - 获取数据成功,开始唤醒线程生产
+ERROR 消费者 c.MessageQueue - 获取数据为空，开始等待
