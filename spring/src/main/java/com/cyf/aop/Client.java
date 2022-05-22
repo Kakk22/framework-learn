@@ -13,7 +13,10 @@ public class Client {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
-        HelloService helloService = (HelloService) context.getBean("helloService");
-        helloService.hello();
+//        HelloService helloService = (HelloService) context.getBean("helloService");
+//        helloService.hello();
+        Object a = context.getBean("a");
+        System.out.println("---");
+
     }
 }

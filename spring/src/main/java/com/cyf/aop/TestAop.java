@@ -1,6 +1,9 @@
 package com.cyf.aop;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.beans.Transient;
 
 /**
  * @author 陈一锋
@@ -18,6 +21,7 @@ public class TestAop {
         this.str = str;
     }
 
+    @Transactional
     public void test() {
         System.out.println(this.str);
     }

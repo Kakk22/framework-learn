@@ -18,24 +18,24 @@ public class AspectJTest {
 
     @Before("test()")
     public void beforeTest() {
-        System.out.println("before");
+        System.out.println("-----before----");
     }
 
     @After("test()")
     public void afterTest() {
-        System.out.println("after");
+        System.out.println("------after------");
     }
 
     @Around("test()")
     public Object aroundTest(ProceedingJoinPoint pjp) {
-        System.out.println("before1");
+        System.out.println("around---before1");
         Object o = null;
         try {
             o = pjp.proceed();
         } catch (Throwable e) {
             e.printStackTrace();
         }
-        System.out.println("after1");
+        System.out.println("around---after1");
         return o;
     }
 

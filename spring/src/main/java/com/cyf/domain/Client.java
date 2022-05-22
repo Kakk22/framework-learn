@@ -9,6 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Client {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:application.xml");
-        context.getBean("a");
+        A a = (A) context.getBean("a");
+        a.hello();
     }
 }

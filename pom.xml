@@ -31,7 +31,19 @@
         <module>mybatis</module>
         <module>base</module>
         <module>redis</module>
+        <module>distributed</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.12</version>
+                <scope>compile</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 
 </project>

@@ -1,4 +1,4 @@
-package com.cyf.util;
+package com.cyf.util.list;
 
 import java.util.ArrayList;
 import java.util.Arrays;
