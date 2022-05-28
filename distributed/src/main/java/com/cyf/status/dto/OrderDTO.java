@@ -9,7 +9,7 @@ import lombok.Data;
  */
 @Data
 @Builder
-public abstract class OrderDTO {
+public class OrderDTO {
     private Integer orderId;
     private Integer status;
 }
