@@ -32,7 +32,6 @@
         <module>base</module>
         <module>redis</module>
         <module>distributed</module>
-        <module>netty-all</module>
     </modules>
 
 
