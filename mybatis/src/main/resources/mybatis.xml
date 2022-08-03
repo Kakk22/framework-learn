@@ -30,7 +30,7 @@
     </environments>
 
     <mappers>
-        <mapper resource="com.cyf.mapper/UserMapper.xml"/>
+        <mapper resource="com.cyf.mapper/UserMapper.xml" />
 <!--        <package name="com.cyf.mapper"/>-->
     </mappers>
 

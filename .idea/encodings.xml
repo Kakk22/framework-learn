@@ -5,6 +5,10 @@
     <file url="file://$PROJECT_DIR$/shardingsphere-jdbc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-starter-threadpool/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-starter-threadpool/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/auth/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud/gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot/src/main/java" charset="UTF-8" />
   </component>
 </project>

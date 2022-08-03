@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jvm" />
+        <module name="auth" />
         <module name="mybatis" />
         <module name="distributed" />
         <module name="thread" />
@@ -16,29 +17,35 @@
         <module name="second" />
         <module name="spring" />
         <module name="spring-boot-starter-threadpool" />
+        <module name="netty-all" />
         <module name="shardingsphere-jdbc" />
         <module name="boot-demo" />
         <module name="first" />
+        <module name="gateway" />
         <module name="base" />
         <module name="netty" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="auth" target="8" />
       <module name="base" target="8" />
       <module name="base2" target="8" />
       <module name="boot-demo" target="1.8" />
       <module name="distributed" target="8" />
       <module name="first" target="8" />
       <module name="framework-learn" target="8" />
+      <module name="gateway" target="8" />
       <module name="interview" target="8" />
       <module name="jvm" target="8" />
       <module name="mybatis" target="8" />
       <module name="netty" target="8" />
+      <module name="netty-all" target="8" />
       <module name="redis" target="8" />
       <module name="second" target="8" />
       <module name="shardingsphere-jdbc" target="1.8" />
       <module name="spring" target="8" />
       <module name="spring-boot-starter-threadpool" target="1.8" />
+      <module name="spring-cloud" target="8" />
       <module name="thread" target="8" />
       <module name="three" target="8" />
       <module name="wrapper" target="1.5" />

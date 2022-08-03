@@ -26,7 +26,8 @@ public class TimerTest {
 class ScheduledExecutorServiceTest {
     public static void main(String[] args) {
         ScheduledThreadPoolExecutor poll = new ScheduledThreadPoolExecutor(2, Executors.defaultThreadFactory());
-        poll.scheduleAtFixedRate(() -> System.out.println("开始执行任务了：" + System.currentTimeMillis()), 0, 5000, TimeUnit.MILLISECONDS);
-        poll.scheduleWithFixedDelay(() -> System.out.println("开始执行任务了delay：" + System.currentTimeMillis()), 0, 1000, TimeUnit.MILLISECONDS);
+        poll.schedule(() -> System.out.println("开始执行任务了：" + System.currentTimeMillis()),  5000, TimeUnit.MILLISECONDS);
+//        poll.scheduleAtFixedRate(() -> System.out.println("开始执行任务了：" + System.currentTimeMillis()), 0, 5000, TimeUnit.MILLISECONDS);
+//        poll.scheduleWithFixedDelay(() -> System.out.println("开始执行任务了delay：" + System.currentTimeMillis()), 0, 1000, TimeUnit.MILLISECONDS);
     }
 }
