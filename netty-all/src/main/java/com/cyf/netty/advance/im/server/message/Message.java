@@ -1,4 +1,4 @@
-package com.cyf.netty.advance.protocol.message;
+package com.cyf.netty.advance.im.server.message;
 
 import java.io.Serializable;
 
@@ -13,6 +13,8 @@ public abstract class Message implements Serializable {
 
     public static final int LOGIN_REQUEST_CODE = 0;
     public static final int LOGIN_RESPONSE_CODE = 1;
+    public static final int CHAT_REQUEST_CODE = 2;
+    public static final int CHAT_RESPONSE_CODE = 3;
 
 
     public abstract Integer messageType();

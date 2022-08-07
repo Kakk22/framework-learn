@@ -1,8 +1,7 @@
 package com.cyf.netty.advance.protocol.endec;
 
-import com.cyf.netty.advance.protocol.message.Message;
+import com.cyf.netty.advance.im.server.message.Message;
 import io.netty.buffer.ByteBuf;
-import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageCodec;
 import lombok.extern.slf4j.Slf4j;
