@@ -32,6 +32,7 @@
         <module>base</module>
         <module>redis</module>
         <module>distributed</module>
+        <module>data-structure</module>
     </modules>
 
 
@@ -79,6 +80,13 @@
                 <artifactId>spring-boot-starter-test</artifactId>
                 <scope>test</scope>
                 <version>${springboot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.11</version>
+                <scope>test</scope>
             </dependency>
 
         </dependencies>

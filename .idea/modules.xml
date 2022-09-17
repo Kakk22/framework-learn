@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/spring-cloud/auth/auth.iml" filepath="$PROJECT_DIR$/spring-cloud/auth/auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot/boot-demo.iml" filepath="$PROJECT_DIR$/springboot/boot-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interview/code/code.iml" filepath="$PROJECT_DIR$/interview/code/code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data-structure/data-structure.iml" filepath="$PROJECT_DIR$/data-structure/data-structure.iml" />
       <module fileurl="file://$PROJECT_DIR$/distributed/distributed.iml" filepath="$PROJECT_DIR$/distributed/distributed.iml" />
       <module fileurl="file://$PROJECT_DIR$/interview/first/first.iml" filepath="$PROJECT_DIR$/interview/first/first.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework-learn.iml" filepath="$PROJECT_DIR$/framework-learn.iml" />

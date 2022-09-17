@@ -8,6 +8,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.string.StringDecoder;
+import io.netty.handler.logging.LoggingHandler;
 
 /**
  * @author 陈一锋
@@ -19,9 +20,11 @@ public class Server {
                 .group(new NioEventLoopGroup())
                 .channel(NioServerSocketChannel.class)
                 .childHandler(new ChannelInitializer<NioSocketChannel>() {
+                    //accept完后调用这个方法
                     @Override
                     protected void initChannel(NioSocketChannel socketChannel) throws Exception {
                         socketChannel.pipeline()
+                                .addLast(new LoggingHandler())
                                 .addLast(new StringDecoder())
                                 .addLast(new ChannelInboundHandlerAdapter() {
                                     @Override

@@ -8,10 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jvm" />
+        <module name="code" />
+        <module name="data-structure" />
         <module name="auth" />
         <module name="mybatis" />
         <module name="distributed" />
         <module name="thread" />
+        <module name="dataStructure" />
         <module name="three" />
         <module name="redis" />
         <module name="second" />
@@ -31,6 +34,9 @@
       <module name="base" target="8" />
       <module name="base2" target="8" />
       <module name="boot-demo" target="1.8" />
+      <module name="code" target="8" />
+      <module name="data-structure" target="8" />
+      <module name="dataStructure" target="8" />
       <module name="distributed" target="8" />
       <module name="first" target="8" />
       <module name="framework-learn" target="8" />

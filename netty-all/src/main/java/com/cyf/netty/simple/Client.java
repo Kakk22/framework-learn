@@ -1,6 +1,7 @@
 package com.cyf.netty.simple;
 
 import io.netty.bootstrap.Bootstrap;
+import io.netty.channel.Channel;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
@@ -14,7 +15,7 @@ import java.net.InetSocketAddress;
  */
 public class Client {
     public static void main(String[] args) throws InterruptedException {
-        new Bootstrap()
+        Channel c = new Bootstrap()
                 .group(new NioEventLoopGroup())
                 .channel(NioSocketChannel.class)
                 .handler(new ChannelInitializer<NioSocketChannel>() {
@@ -28,9 +29,10 @@ public class Client {
                 //堵塞等待连接成功
                 .sync()
                 //获取channel
-                .channel()
+                .channel();
+
                 //写入数据并发送
-                .writeAndFlush("hello netty");
+        c.writeAndFlush("hello netty");
 
     }
 }

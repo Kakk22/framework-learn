@@ -15,6 +15,7 @@
         <module>first</module>
         <module>second</module>
         <module>three</module>
+        <module>code</module>
     </modules>
 
     <dependencies>

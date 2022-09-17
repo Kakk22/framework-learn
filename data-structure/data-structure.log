@@ -1,0 +1,63 @@
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:4,队列:[4, 100, null, null, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 当前节点比父节点大,退出循环:idx:0,key:5,parent:4
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:5,队列:[4, 100, 5, null, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 当前节点比父节点大,退出循环:idx:0,key:6,parent:4
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:6,队列:[4, 6, 5, 100, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:3,队列:[3, 4, 5, 100, 6, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:4,队列:[4, 100, null, null, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 当前节点比父节点大,退出循环:idx:0,key:5,parent:4
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:5,队列:[4, 100, 5, null, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 当前节点比父节点大,退出循环:idx:0,key:6,parent:4
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:6,队列:[4, 6, 5, 100, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:3,队列:[3, 4, 5, 100, 6, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换过程，节点的值比对。上节点：3 下节点：4 位置替换
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换结果，最终更换位置。Idx：1 Val：6
+INFO main com.cyf.queue.PriorityQueue - 【出队】左右子节点比对，获取最小值。left：6 right：5
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换过程，节点的值比对。上节点：4 下节点：5 位置替换
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换结果，最终更换位置。Idx：2 Val：100
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换过程，节点的值比对。上节点：5 下节点：6 位置替换
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换结果，最终更换位置。Idx：1 Val：100
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换结果，最终更换位置。Idx：0 Val：100
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换结果，最终更换位置。Idx：0 Val：100
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:4,队列:[4, 100, null, null, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 当前节点比父节点大,退出循环:idx:0,key:5,parent:4
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:5,队列:[4, 100, 5, null, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 当前节点比父节点大,退出循环:idx:0,key:6,parent:4
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:6,队列:[4, 6, 5, 100, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:3,队列:[3, 4, 5, 100, 6, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换过程，节点的值比对。上节点：null 下节点：4 位置替换
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换结果，最终更换位置。Idx：1 Val：6
+INFO main com.cyf.queue.PriorityQueue - 【出队】左右子节点比对，获取最小值。left：6 right：5
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换过程，节点的值比对。上节点：null 下节点：5 位置替换
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换结果，最终更换位置。Idx：2 Val：100
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换过程，节点的值比对。上节点：null 下节点：6 位置替换
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换结果，最终更换位置。Idx：1 Val：100
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换结果，最终更换位置。Idx：0 Val：100
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换结果，最终更换位置。Idx：0 Val：100
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:4,队列:[4, 100, null, null, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 当前节点比父节点大,退出循环:idx:0,key:5,parent:4
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:5,队列:[4, 100, 5, null, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 当前节点比父节点大,退出循环:idx:0,key:6,parent:4
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:6,队列:[4, 6, 5, 100, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:3,队列:[3, 4, 5, 100, 6, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换过程，节点的值比对。上节点：3 下节点：4 位置替换
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换结果，最终更换位置。Idx：1 Val：6
+INFO main com.cyf.queue.PriorityQueue - 【出队】左右子节点比对，获取最小值。left：6 right：5
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换过程，节点的值比对。上节点：4 下节点：5 位置替换
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换结果，最终更换位置。Idx：2 Val：100
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换过程，节点的值比对。上节点：5 下节点：6 位置替换
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换结果，最终更换位置。Idx：1 Val：100
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换结果，最终更换位置。Idx：0 Val：100
+INFO main com.cyf.queue.PriorityQueue - 【出队】替换结果，最终更换位置。Idx：0 Val：100
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:4,队列:[4, 100, null, null, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 当前节点比父节点大,退出循环:idx:0,key:5,parent:4
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:5,队列:[4, 100, 5, null, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 当前节点比父节点大,退出循环:idx:0,key:6,parent:4
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:6,队列:[4, 6, 5, 100, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:3,队列:[3, 4, 5, 100, 6, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:4,队列:[4, 100, null, null, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 当前节点比父节点大,退出循环:idx:0,key:5,parent:4
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:5,队列:[4, 100, 5, null, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 当前节点比父节点大,退出循环:idx:0,key:6,parent:4
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:6,队列:[4, 6, 5, 100, null, null, null, null, null, null]
+INFO main com.cyf.queue.PriorityQueue - 调整堆结束,当前key:3,队列:[3, 4, 5, 100, 6, null, null, null, null, null]
