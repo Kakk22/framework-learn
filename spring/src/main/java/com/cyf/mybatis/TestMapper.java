@@ -3,7 +3,6 @@ package com.cyf.mybatis;
 import com.cyf.mybatis.mapper.UserMapper;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
-import org.junit.Test;
 
 /**
  * @author 陈一锋
@@ -17,7 +16,7 @@ public class TestMapper {
     }
 
 
-    @Test
+//    @Test
     public void testAdd() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         try {
@@ -30,7 +29,7 @@ public class TestMapper {
         }
     }
 
-    @Test
+//    @Test
     public void testGet() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         try {

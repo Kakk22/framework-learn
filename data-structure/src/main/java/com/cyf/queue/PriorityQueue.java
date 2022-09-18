@@ -1,6 +1,5 @@
 package com.cyf.queue;
 
-import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.AbstractQueue;
@@ -53,20 +52,22 @@ public class PriorityQueue<E> extends AbstractQueue<E> {
     private void siftUpComparable(int k, E e) {
         Comparable<? super E> key = (Comparable<? super E>) e;
         while (k > 0) {
-            //获取父节点的索引 // k = (k-1) >>> 1;等同
-            int parent = (k - 1) / 2;
-            Object p = queue[parent];
-            if (key.compareTo((E) p) > 0) {
-                log.info("当前节点比父节点大,退出循环:idx:{},key:{},parent:{}", parent, key, p);
+            //找到当前节点的父节点索引
+            int parent = (k - 1) >>> 1;
+            E c = (E) queue[parent];
+            if (key.compareTo(c) > 0) {
+                //如果比父节点小 则此时就是最终位置
                 break;
             }
-            //当前节点比父节点小 交换位置
-            queue[k] = p;
+            //比父节点小 则交换位置
+            queue[k] = c;
             k = parent;
         }
-        queue[k] = e;
-        log.info("调整堆结束,当前key:{},队列:{}", e, queue);
+
+        //找到最终位置
+        queue[k] = key;
     }
+
 
     private void grow() {
         int oldCapacity = queue.length;
@@ -100,13 +101,13 @@ public class PriorityQueue<E> extends AbstractQueue<E> {
         int half = size >>> 1;
         while (k < half) {
             //找到左子节点和右子节点 比较大小
-            int left = (k << 1) + 1;
-            int right = left + 1;
-            Object c = queue[left];
+            int child = (k << 1) + 1;
+            int right = child + 1;
+            Object c = queue[child];
             if (right < size && ((Comparable<? super E>) c).compareTo((E) queue[right]) >= 0) {
                 //交换对象
-                left = right;
-                c = queue[left];
+                child = right;
+                c = queue[child];
             }
 
             //此时c是两个子节点中较小的
@@ -118,7 +119,7 @@ public class PriorityQueue<E> extends AbstractQueue<E> {
             //当前节点设置为较小的节点
             queue[k] = c;
             //将指针指向较小节点
-            k = left;
+            k = child;
         }
 
         queue[k] = key;
