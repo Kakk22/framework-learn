@@ -33,6 +33,7 @@
         <module>redis</module>
         <module>distributed</module>
         <module>data-structure</module>
+        <module>elasticsearch</module>
     </modules>
 
 

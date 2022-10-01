@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  data:
+    elasticsearch:
+      cluster-nodes: 127.0.0.1:9300
+      cluster-name: elastcisearch
+      repositories:
+        enabled: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/es?characterEncoding=utf8
+    password: root
+    username: root
