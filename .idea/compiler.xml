@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jvm" />
+        <module name="openfeign" />
         <module name="code" />
         <module name="data-structure" />
         <module name="auth" />
@@ -48,6 +49,8 @@
       <module name="mybatis" target="8" />
       <module name="netty" target="8" />
       <module name="netty-all" target="8" />
+      <module name="open-feign" target="8" />
+      <module name="openfeign" target="8" />
       <module name="redis" target="8" />
       <module name="second" target="8" />
       <module name="shardingsphere-jdbc" target="1.8" />
@@ -62,6 +65,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="boot-demo" options="-parameters" />
+      <module name="open-feign" options="" />
       <module name="redis" options="-parameters" />
       <module name="shardingsphere-jdbc" options="-parameters" />
       <module name="spring-boot-starter-threadpool" options="-parameters" />

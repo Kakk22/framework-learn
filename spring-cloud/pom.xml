@@ -10,6 +10,7 @@
     <modules>
         <module>auth</module>
         <module>gateway</module>
+        <module>openfeign</module>
     </modules>
 
     <packaging>pom</packaging>

@@ -34,6 +34,8 @@
         <module>distributed</module>
         <module>data-structure</module>
         <module>elasticsearch</module>
+        <module>open-feign</module>
+        <module>openfeign</module>
     </modules>
 
 

@@ -17,6 +17,8 @@
       <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty/netty.iml" filepath="$PROJECT_DIR$/netty/netty.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-all/netty-all.iml" filepath="$PROJECT_DIR$/netty-all/netty-all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/open-feign/open-feign.iml" filepath="$PROJECT_DIR$/spring-cloud/open-feign/open-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/openfeign/openfeign.iml" filepath="$PROJECT_DIR$/spring-cloud/openfeign/openfeign.iml" />
       <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/interview/second/second.iml" filepath="$PROJECT_DIR$/interview/second/second.iml" />
       <module fileurl="file://$PROJECT_DIR$/shardingsphere-jdbc/shardingsphere-jdbc.iml" filepath="$PROJECT_DIR$/shardingsphere-jdbc/shardingsphere-jdbc.iml" />
