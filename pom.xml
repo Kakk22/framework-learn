@@ -36,6 +36,7 @@
         <module>elasticsearch</module>
         <module>open-feign</module>
         <module>openfeign</module>
+        <module>kafka</module>
     </modules>
 
 

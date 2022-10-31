@@ -24,6 +24,7 @@
         <module name="netty-all" />
         <module name="elasticsearch" />
         <module name="shardingsphere-jdbc" />
+        <module name="kafka" />
         <module name="boot-demo" />
         <module name="first" />
         <module name="gateway" />
@@ -46,6 +47,7 @@
       <module name="gateway" target="8" />
       <module name="interview" target="8" />
       <module name="jvm" target="8" />
+      <module name="kafka" target="8" />
       <module name="mybatis" target="8" />
       <module name="netty" target="8" />
       <module name="netty-all" target="8" />
@@ -65,6 +67,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="boot-demo" options="-parameters" />
+      <module name="kafka" options="-parameters" />
       <module name="open-feign" options="" />
       <module name="redis" options="-parameters" />
       <module name="shardingsphere-jdbc" options="-parameters" />
