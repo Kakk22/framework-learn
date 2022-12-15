@@ -1,11 +1,9 @@
 package com.cyf.file;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
-import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeUnit;
 
 /**
