@@ -56,7 +56,7 @@ public class ImServer {
                         p.addLast(new ProtobufVarint32LengthFieldPrepender());
                         // 超过30秒未发送消息则发送心跳包
                         p.addLast(new IdleStateHandler(60, 30, 0));
-                        p.addLast(new IMServerHandler());
+                        p.addLast(new ImServerHandler());
                     }
                 });
 

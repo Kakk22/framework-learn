@@ -10,6 +10,11 @@
         <option value="$PROJECT_DIR$/netty-all/pom.xml" />
         <option value="$PROJECT_DIR$/interview/code/pom.xml" />
         <option value="$PROJECT_DIR$/data-structure/pom.xml" />
+        <option value="$PROJECT_DIR$/im/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/simple-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/simple-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot/starter/spring-boot-starter-threadpool/pom.xml" />
       </list>
     </option>
   </component>

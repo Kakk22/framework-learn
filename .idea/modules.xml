@@ -4,14 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring-cloud/auth/auth.iml" filepath="$PROJECT_DIR$/spring-cloud/auth/auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot/boot-demo.iml" filepath="$PROJECT_DIR$/springboot/boot-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/interview/code/code.iml" filepath="$PROJECT_DIR$/interview/code/code.iml" />
       <module fileurl="file://$PROJECT_DIR$/data-structure/data-structure.iml" filepath="$PROJECT_DIR$/data-structure/data-structure.iml" />
       <module fileurl="file://$PROJECT_DIR$/distributed/distributed.iml" filepath="$PROJECT_DIR$/distributed/distributed.iml" />
       <module fileurl="file://$PROJECT_DIR$/elasticsearch/elasticsearch.iml" filepath="$PROJECT_DIR$/elasticsearch/elasticsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/interview/first/first.iml" filepath="$PROJECT_DIR$/interview/first/first.iml" />
-      <module fileurl="file://$PROJECT_DIR$/framework-learn.iml" filepath="$PROJECT_DIR$/framework-learn.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud/gateway/gateway.iml" filepath="$PROJECT_DIR$/spring-cloud/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/im/im.iml" filepath="$PROJECT_DIR$/im/im.iml" />
       <module fileurl="file://$PROJECT_DIR$/interview/interview.iml" filepath="$PROJECT_DIR$/interview/interview.iml" />
       <module fileurl="file://$PROJECT_DIR$/jvm/jvm.iml" filepath="$PROJECT_DIR$/jvm/jvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka/kafka.iml" filepath="$PROJECT_DIR$/kafka/kafka.iml" />
@@ -23,9 +22,13 @@
       <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/interview/second/second.iml" filepath="$PROJECT_DIR$/interview/second/second.iml" />
       <module fileurl="file://$PROJECT_DIR$/shardingsphere-jdbc/shardingsphere-jdbc.iml" filepath="$PROJECT_DIR$/shardingsphere-jdbc/shardingsphere-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot/simple-boot/simple-boot.iml" filepath="$PROJECT_DIR$/spring-boot/simple-boot/simple-boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring.iml" filepath="$PROJECT_DIR$/spring/spring.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-starter-threadpool/spring-boot-starter-threadpool.iml" filepath="$PROJECT_DIR$/spring-boot-starter-threadpool/spring-boot-starter-threadpool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot/spring-boot.iml" filepath="$PROJECT_DIR$/spring-boot/spring-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot/starter/spring-boot-starter-threadpool/spring-boot-starter-threadpool.iml" filepath="$PROJECT_DIR$/spring-boot/starter/spring-boot-starter-threadpool/spring-boot-starter-threadpool.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud/spring-cloud.iml" filepath="$PROJECT_DIR$/spring-cloud/spring-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/system-center.iml" filepath="$PROJECT_DIR$/system-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/technology-design/technology-design.iml" filepath="$PROJECT_DIR$/technology-design/technology-design.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread/thread.iml" filepath="$PROJECT_DIR$/thread/thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/interview/three/three.iml" filepath="$PROJECT_DIR$/interview/three/three.iml" />
     </modules>

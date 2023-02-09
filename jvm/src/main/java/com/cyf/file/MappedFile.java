@@ -19,7 +19,8 @@ public class MappedFile {
     private FileChannel fileChannel;
 
     private int fileSize;
-    private AtomicInteger writePoint = new AtomicInteger(0);
+    private final AtomicInteger writePoint = new AtomicInteger(0);
+    private final AtomicInteger flushedPosition = new AtomicInteger(0);
 
     public MappedFile(String fileName, int fileSize) throws IOException {
         this.fileSize = fileSize;
@@ -80,6 +81,14 @@ public class MappedFile {
             return newBuffer;
         }
         return null;
+    }
+
+    public void setWritePoint(int pos){
+        this.writePoint.set(pos);
+    }
+
+    public void setFlushedPosition(int pos){
+        this.flushedPosition.set(pos);
     }
 
 }
