@@ -11,6 +11,7 @@
         <module name="auth" />
         <module name="mybatis" />
         <module name="simple-boot" />
+        <module name="code-gen-apt" />
         <module name="three" />
         <module name="redis" />
         <module name="second" />
@@ -41,11 +42,14 @@
       <module name="base2" target="8" />
       <module name="boot-demo" target="1.8" />
       <module name="code" target="8" />
+      <module name="code-gen" target="8" />
+      <module name="code-gen-apt" target="8" />
       <module name="data-structure" target="8" />
       <module name="dataStructure" target="8" />
       <module name="distributed" target="8" />
       <module name="elasticsearch" target="8" />
       <module name="first" target="8" />
+      <module name="framework" target="8" />
       <module name="gateway" target="8" />
       <module name="im" target="1.8" />
       <module name="interview" target="8" />

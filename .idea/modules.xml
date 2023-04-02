@@ -5,10 +5,13 @@
       <module fileurl="file://$PROJECT_DIR$/spring-cloud/auth/auth.iml" filepath="$PROJECT_DIR$/spring-cloud/auth/auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
       <module fileurl="file://$PROJECT_DIR$/interview/code/code.iml" filepath="$PROJECT_DIR$/interview/code/code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/code-gen/code-gen.iml" filepath="$PROJECT_DIR$/framework/code-gen/code-gen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/code-gen/code-gen-apt/code-gen-apt.iml" filepath="$PROJECT_DIR$/framework/code-gen/code-gen-apt/code-gen-apt.iml" />
       <module fileurl="file://$PROJECT_DIR$/data-structure/data-structure.iml" filepath="$PROJECT_DIR$/data-structure/data-structure.iml" />
       <module fileurl="file://$PROJECT_DIR$/distributed/distributed.iml" filepath="$PROJECT_DIR$/distributed/distributed.iml" />
       <module fileurl="file://$PROJECT_DIR$/elasticsearch/elasticsearch.iml" filepath="$PROJECT_DIR$/elasticsearch/elasticsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/interview/first/first.iml" filepath="$PROJECT_DIR$/interview/first/first.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/framework.iml" filepath="$PROJECT_DIR$/framework/framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud/gateway/gateway.iml" filepath="$PROJECT_DIR$/spring-cloud/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/im/im.iml" filepath="$PROJECT_DIR$/im/im.iml" />
       <module fileurl="file://$PROJECT_DIR$/interview/interview.iml" filepath="$PROJECT_DIR$/interview/interview.iml" />

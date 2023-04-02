@@ -34,6 +34,7 @@ public class Scheduled {
 
 
         Thread taskThread = new Thread(() -> {
+            // TODO: 2023/2/11 这里要对其一下时间
             while (true) {
                 //获取接下来30秒的任务 列表 计算任务
                 List<Job> jobs = scheduled.jobs;
@@ -43,7 +44,7 @@ public class Scheduled {
                     long diffTime = (job.getNextScheduledTime().getTime() - currentTimeMillis) / 1000;
                     if (diffTime < 30) {
                         //计算执行时间刻度所在下标
-                        int index = (int) (job.getNextScheduledTime().getTime()/1000) % 60;
+                        int index = (int) (job.getNextScheduledTime().getTime() / 1000) % 60;
                         System.out.println("添加任务成功,任务执行时间:" + job.getNextScheduledTime());
                         if (times.containsKey(index)) {
                             times.get(index).add(job.getId());
@@ -65,17 +66,20 @@ public class Scheduled {
         });
 
         Thread rangeThread = new Thread(() -> {
+            // TODO: 2023/2/11 这里要对其一下时间
+            try {
+                TimeUnit.MILLISECONDS.sleep(200);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
             while (true) {
-                try {
-                    TimeUnit.MILLISECONDS.sleep(200);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+
                 Map<Integer, List<Long>> times = scheduled.times;
 
                 int nowSecond = Calendar.getInstance().get(Calendar.SECOND);
 
-                int idx = nowSecond  % 60;
+                int idx = nowSecond % 60;
                 List<Long> ids = times.remove(idx);
                 System.out.println("当前时间:" + DateUtil.now());
                 if (ids != null && !ids.isEmpty()) {

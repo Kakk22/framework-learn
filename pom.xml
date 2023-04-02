@@ -37,6 +37,7 @@
         <module>elasticsearch</module>
         <module>kafka</module>
         <module>technology-design</module>
+        <module>framework</module>
     </modules>
 
 

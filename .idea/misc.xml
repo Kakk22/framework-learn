@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/spring-boot/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/simple-boot/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot/starter/spring-boot-starter-threadpool/pom.xml" />
+        <option value="$PROJECT_DIR$/framework/code-gen/pom.xml" />
       </list>
     </option>
   </component>
